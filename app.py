@@ -85,29 +85,7 @@ st.markdown(
 
 with st.sidebar:
     st.title('Urdu Book Bot')
-    book1, book2, book3, book4, book5, book6, book7 = st.columns(7)
-    with book1:
-        book1_selected = st.checkbox("Jami-Khalq-par-Huzoor-ki-Rahmat-o-Shafqat",key="1key",value=False)
-    with book2:
-        book2_selected = st.checkbox("Fitna e Khawarij",key="2key",value=False)
-    with book3:
-        book3_selected = st.checkbox("Gustakh e Raool - Ahadith e Nabvi ki roshani mein",key="3key",value=False)
-    with book4:
-        book4_selected = st.checkbox("Rihla-fi-Talab-il-Ilm",key="4key",value=False)
-    with book5:
-        book5_selected = st.checkbox("Yaqoot-wal-Marjan",key="5key",value=False)
-    with book6:
-        book6_selected = st.checkbox("Zubdat-ul-Irfan",key="6key",value=False)
-    with book7:
-        book7_selected = st.checkbox("al-Jihad al-Akbar ",key="7key",value=False)
-sel_chkbox=0
-i=1
-while i<8:
-    isclicked=st.session_state[f"{i}key"]
-    if isclicked:
-        sel_chkbox=sel_chkbox+1
-    i=i+1
-    
+    book1, book2, book3, book4, book5, book6, book7 = st.columns(7)   
     # Display checkboxes with improved CSS styling for readability
     book1_selected = st.checkbox(
         label='جامع خلق پر حضور کی رحمت و شفقت', 
