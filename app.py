@@ -1,6 +1,4 @@
 
-# this is my main code file
-
 __import__('pysqlite3')  # Dynamically imports the pysqlite3 module
 import sys  # Imports the sys module necessary to modify system properties
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')  # Replaces the sqlite3 entry in sys.modules with pysqlite3
